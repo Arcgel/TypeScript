@@ -1,0 +1,112 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    width: 900px;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #5c67f2;
+    box-shadow: 0px 0px 10px rgba(92, 103, 242, 0.5);
+    outline: none;
+}
+
+button {
+    background: #5c67f2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #434ea8;
+    transform: scale(1.07);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+}
+
+th {
+    background: #5c67f2;
+    color: white;
+    font-size: 18px;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #cc4848;
+    transform: scale(1.12);
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    button, input, select {
+        font-size: 16px;
+    }
+
+    th, td {
+        font-size: 16px;
+    }
+}
